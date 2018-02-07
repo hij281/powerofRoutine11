@@ -54,32 +54,8 @@
         <h5 class="pull-right">2018.01.30</h5>
       </HEADER>
     </div>
-    <!-- <ng-include src="'Component/todoList/todoList.html'"></ng-include> -->
-    <SECTION>
-      <a class="pull-left btn btn-primary" href="#/addlist.html">
-        add-List
-      </a>
-      <button type="button" name="button" class="btn btn-default pull-right">next</button><br>
-      <ARTICLE>
-        <div class="panel panel-default row" ng-controller="mainCtrl" ng-hide="data.error">
-          <div class="alert alert-danger" ng-show="data.error">
-            Error {{data.error.status}}. 다시 시도해 주세요
-            <a href="/index.html" class="alert-link"> Click Her to try again</a>
-          </div>
-
-
-          <div class="col-xl-8">
-            <div class="well" ng-repeat="item in data.todolistObj">
-              <input type="checkbox" name="" value="{{item.flag}}">  <strong>{{item.usertodolist}}</strong>   <a class="pull-right btn btn-primary">{{item.usertodolistpoint}}점</a>
-            </div>
-            <button type="button" name="button" class="pull-right btn btn-lg btn-primary">평가</button>
-          </div>
-        </div>
-
-      </ARTICLE>
-    </SECTION>
-
-
+     <ng-include src="'Component/todoList/todoList.html'"></ng-include>
+    
     <!-- <ng-view/> -->
     <FOOTER>footer</FOOTER>
   </DIV>
